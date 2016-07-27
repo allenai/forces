@@ -15,16 +15,16 @@ If you find the code useful in your research, please consider citing:
 ### Requirements
 This code is written in Lua, based on [Torch](http://torch.ch). If you use [Ubuntu 14.04+](http://ubuntu.com), you can follow [these instructions](https://github.com/facebook/fbcunn/blob/master/INSTALL.md) to install torch.
 
-You need the [ForScene dataset](https://s3-us-west-2.amazonaws.com/ai2-vision-datasets/ForScene_dataset/ForScene.tar.gz) (2GB). Extract the files and set the correct paths in `setting_options.lua`.
+You need to download the [ForScene dataset](https://s3-us-west-2.amazonaws.com/ai2-vision-datasets/ForScene_dataset/ForScene.tar.gz) (2GB). Extract the files and set the correct paths in `setting_options.lua`.
 
 ### Training
-To run the training:
+To train the model, run:
 ```
 th main.lua train
 ```
 
 ### Test
-Set the path to the learned model in `setting_options.lua` (`config.initModelPath.fullNN`). You also need to set the number of iterations `config.nIter` and the batch size `config.batchSize`. To run the test:
+Set the path to the learned model in `setting_options.lua` (`config.initModelPath.fullNN`). You also need to set the number of batches `config.nIter` and the batch size `config.batchSize`. To run the test:
 ```
 th main.lua test
 ```
