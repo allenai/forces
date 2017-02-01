@@ -34,4 +34,4 @@ Our released files contain a pre-trained model `Model_iter_15000.t7`, which is a
 We have also provided the code for generating the simulations. You need to load `scene_gen.blend` in Blender game engine. It saves the initial and final pose of the objects in `initial` and `final` directories, respectively.
 
 ### License
-This code is released under MIT License.
+This code is released under Apache 2.0 license.
